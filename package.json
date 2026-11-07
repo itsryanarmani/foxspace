@@ -7,9 +7,9 @@
   "author": "Pooria Arab",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pooriaarab/foxspace.git"
+    "url": "git+https://github.com/itsryanarmani/foxspace.git"
   },
-  "homepage": "https://github.com/pooriaarab/foxspace#readme",
+  "homepage": "https://github.com/itsryanarmani/foxspace#readme",
   "packageManager": "pnpm@11.10.0",
   "engines": {
     "node": ">=24"

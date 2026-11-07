@@ -79,14 +79,14 @@ flowchart LR
    Public items always go in, `ask` items only when you tick them, and private items never reach the frame.
    A block that holds one of your never-share terms is not inserted; the picker names the term.
 4. Insert puts the block before your text with `document.execCommand("insertText")`, the method of
-   [foxpaw](https://github.com/pooriaarab/foxpaw) and foxpilot's PII Guard, so the site's editor gets the
+   [foxpaw](https://github.com/itsryanarmani/foxpaw) and foxpilot's PII Guard, so the site's editor gets the
    input events it listens for. foxspace reads the composer back and says so when the site did not take it.
    It never sends the message.
 5. At Enter or a click on the send control, the content script sends the composer text to the event page.
    The never-share terms stay there. Both sides are normalized (NFKC, a lookalike map, accents and format
    characters removed), so `AB 1234 56` with a zero-width space in it still matches `AB123456`.
    A send goes out only with the text that was checked; an edit made in the meantime is checked again.
-6. Each injection goes to a [foxtrail](https://github.com/pooriaarab/foxtrail) log in IndexedDB, shown on the spaces page.
+6. Each injection goes to a [foxtrail](https://github.com/itsryanarmani/foxtrail) log in IndexedDB, shown on the spaces page.
 
 ## Why it exists
 
@@ -206,11 +206,11 @@ flowchart LR
   foxpack[foxpack] -- export --> self
   foxprefs[foxprefs] -- export, never-share rules --> self
   self -- trail --> foxtrail[foxtrail]
-  click foxkit "https://github.com/pooriaarab/foxkit"
-  click foxcache "https://github.com/pooriaarab/foxcache"
-  click foxpack "https://github.com/pooriaarab/foxpack"
-  click foxprefs "https://github.com/pooriaarab/foxprefs"
-  click foxtrail "https://github.com/pooriaarab/foxtrail"
+  click foxkit "https://github.com/itsryanarmani/foxkit"
+  click foxcache "https://github.com/itsryanarmani/foxcache"
+  click foxpack "https://github.com/itsryanarmani/foxpack"
+  click foxprefs "https://github.com/itsryanarmani/foxprefs"
+  click foxtrail "https://github.com/itsryanarmani/foxtrail"
 ```
 
 ## License
